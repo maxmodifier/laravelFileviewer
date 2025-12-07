@@ -1,0 +1,27 @@
+{
+    "name": "vijay/document-preview",
+    "description": "Universal file previewer for Laravel (DOC, DOCX, XLS, XLSX, PDF, images, audio, video)",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vijay\\DocumentPreview\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vijay\\DocumentPreview\\FilePreviewServiceProvider"
+            ],
+            "aliases": {
+                "FilePreview": "Vijay\\DocumentPreview\\Facades\\FilePreview"
+            }
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "phpoffice/phpword": "^1.2",
+        "phpoffice/phpspreadsheet": "^2.0",
+        "smalot/pdfparser": "^2.0"
+    }
+}
